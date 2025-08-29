@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.backend
+    environment:
+      - DATABASE_URL=sqlite:///data.db
+      - JWT_SECRET_KEY=change-me
+      - PLAYER_MODE=EMBED
+    ports:
+      - "5000:5000"
+  frontend:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.frontend
+    ports:
+      - "3000:3000"
