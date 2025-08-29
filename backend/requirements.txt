@@ -2,7 +2,7 @@ Flask==3.0.3
 flask-cors==4.0.0
 flask-jwt-extended==4.4.4
 flask-sqlalchemy==3.0.3
-SQLAlchemy==2.1.0
+SQLAlchemy==2.0.43
 psycopg2-binary==2.9.6
 ytmusicapi==1.7.3
 requests==2.32.3
